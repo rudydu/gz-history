@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Headline:</strong>
+  <%= @event.headline %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @event.type %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @event.text %>
+</p>
+
+<p>
+  <strong>Media:</strong>
+  <%= @event.media %>
+</p>
+
+<p>
+  <strong>Credit:</strong>
+  <%= @event.credit %>
+</p>
+
+<p>
+  <strong>Caption:</strong>
+  <%= @event.caption %>
+</p>
+
+<p>
+  <strong>Is bc:</strong>
+  <%= @event.is_bc %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @event.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @event.end %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

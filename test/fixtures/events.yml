@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  headline: MyString
+  type: 
+  text: MyText
+  media: MyString
+  credit: MyString
+  caption: MyString
+  is_bc: false
+  start: MyString
+  end: MyString
+
+two:
+  headline: MyString
+  type: 
+  text: MyText
+  media: MyString
+  credit: MyString
+  caption: MyString
+  is_bc: false
+  start: MyString
+  end: MyString
