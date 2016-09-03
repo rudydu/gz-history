@@ -5,6 +5,8 @@ set :application, 'gz_history'
 
 set :repo_url, 'git@github.com:rudydu/gz-history.git'
 
+after 'deploy:publishing', 'deploy:restart'
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
