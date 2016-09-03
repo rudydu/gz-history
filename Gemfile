@@ -47,3 +47,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+# http://timeline.knightlab.com/
+# https://github.com/nanjingboy/timelineJS-rails
+gem 'timelineJS-rails', '~> 1.1.5'

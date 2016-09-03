@@ -5,6 +5,28 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
+    respond_to do |format|
+      format.html
+      format.json do
+        render json:
+          {
+            timeline:
+              {
+                headline: "广州历史画轴",
+                text: "穿越时空，探寻南中国的明珠，漫步在历史文化名城的时间长廊，展开一幅生动的历史画轴",
+                type: "default",
+                date: @events.map do |event|
+                  {
+                    startDate: event.start,
+                    endDate: event.end,
+                    headline: event.headline,
+                    text: event.text
+                  }
+                end
+              }
+          }
+      end
+    end
   end
 
   # GET /events/1
