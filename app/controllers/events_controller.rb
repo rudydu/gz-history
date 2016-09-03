@@ -15,6 +15,7 @@ class EventsController < ApplicationController
                 headline: "广州历史画轴",
                 text: "穿越时空，探寻南中国的明珠，漫步在历史文化名城的时间长廊，展开一幅生动的历史画轴",
                 type: "default",
+                asset: { media: "https://waytogo.cebupacificair.com/wp-content/uploads/2016/04/G-The-Guangzhou-skyline.jpg" },
                 date: @events.map do |event|
                   {
                     startDate: event.start,
