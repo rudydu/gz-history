@@ -11,7 +11,7 @@ ready = ->
 
       createStoryJS({
           type:       'timeline',
-          width:      '690',
+          width:      '100%',
           height:     '520',
           source:     data,
           embed_id:   'timeline'
