@@ -20,7 +20,8 @@ class EventsController < ApplicationController
                     startDate: event.start,
                     endDate: event.end,
                     headline: event.headline,
-                    text: event.text
+                    text: event.text,
+                    asset: { media: event.media.url }
                   }
                 end
               }

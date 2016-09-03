@@ -56,3 +56,6 @@ gem 'timelineJS-rails', '~> 1.1.5'
 # Foundation::Rails is a gem that makes it super easy to use Foundation in your upcoming Rails project.
 # https://github.com/zurb/foundation-rails
 gem 'foundation-rails'
+
+# https://github.com/carrierwaveuploader/carrierwave
+gem 'carrierwave'

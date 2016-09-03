@@ -17,33 +17,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :type %>
-    <%= f.text_field :type %>
-  </div>
-
-  <div class="field">
     <%= f.label :text %>
     <%= f.text_area :text %>
-  </div>
-
-  <div class="field">
-    <%= f.label :media %>
-    <%= f.text_field :media %>
-  </div>
-
-  <div class="field">
-    <%= f.label :credit %>
-    <%= f.text_field :credit %>
-  </div>
-
-  <div class="field">
-    <%= f.label :caption %>
-    <%= f.text_field :caption %>
-  </div>
-
-  <div class="field">
-    <%= f.label :is_bc %>
-    <%= f.check_box :is_bc %>
   </div>
 
   <div class="field">
@@ -54,6 +29,22 @@
   <div class="field">
     <%= f.label :end %>
     <%= f.text_field :end %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :media %>
+    <%= f.file_field :media %>
+  </div>
+
+  <div class="field">
+    <%= f.label :caption %>
+    <%= f.text_field :caption %>
+  </div>
+
+  <div class="field">
+    <%= f.label :is_bc %>
+    <%= f.check_box :is_bc %>
   </div>
 
   <div class="actions">
