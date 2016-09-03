@@ -1,17 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>GzHistory</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style type="text/css">
+      .full-size {
+        width: 100%;
+      }
+      .vertical-margin1 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+    </style>
   </head>
 
+
   <body>
-    <%= yield %>
-    <div id="copyright" class="container">
-      <p>© 杜容. 版权所有. | Project of <a href="http://durong.net/">Rudy Du</a> | With the help of Dad.</p>
+    <div class="fixed">
+
+    <div class="row vertical-margin1" id="what">
+      <%= yield %>
     </div>
+
+    <div class="row vertical-margin1">
+        <div class="panel clearfix radius callout">
+          <p>© 杜容. 版权所有. | Project of <a href="http://durong.net/">Rudy Du</a> | With the help of Dad.</p>
+        </div>
+    </div>
+
   </body>
+
 </html>
+
+

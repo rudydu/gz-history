@@ -52,3 +52,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # http://timeline.knightlab.com/
 # https://github.com/nanjingboy/timelineJS-rails
 gem 'timelineJS-rails', '~> 1.1.5'
+
+# Foundation::Rails is a gem that makes it super easy to use Foundation in your upcoming Rails project.
+# https://github.com/zurb/foundation-rails
+gem 'foundation-rails'
